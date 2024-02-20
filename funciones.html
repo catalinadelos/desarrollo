@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+</head>
+<body>
+    <h2>
+        ejercicios
+    </h2>
+    <p>
+        FUNCIONES
+    </p>
+    <script>
+/*
+        function mult(a,b){
+            const resultado= a * b
+            return resultado
+        }
+
+        function saludar(saludo){
+            console.log(saludo)           
+        }
+
+        const resultado=mult(2,3)
+        console.log('el resultado de 2x3 es ='+resultado)
+*/
+
+/*
+
+        //EJERCICIOS EN JS
+       function numeroMayor(a,b,c){
+            return Math.max(a,b,c)
+        }
+        function promedio(d,e,f){
+            return ((parseFloat(d)+parseFloat(e)+parseFloat(f))/3)
+        }
+        function concatenar(nombre, apellido){
+            return nombre + " " + apellido
+        }
+
+        a = prompt('ingrese el primer numero')
+        b = prompt('ingrese el segundo numero')
+        c = prompt('ingrese el tercer numero')
+        nombre = prompt('ingrese nombre')
+        apellido = prompt('ingrese apellido')
+
+        function llamada(a,b,c,nombre,apellido){
+            x=numeroMayor(a,b,c)
+            y=promedio(a,b,c)
+            nombres=concatenar(nombre, apellido)
+            alert ('El mayor es=' + x + ' ,el promedio es=' + y + ' ,nombre y apellido=' + nombres)
+        }
+
+        llamada(a,b,c,nombre,apellido)
+
+
+        //FIZZBUS
+        function fizzbus(a=1,b=100){
+            while(a<=b){
+                if((a%3 == 0) && (a%5 ==0)){
+                    console.log("fizz buzz")
+                }else if(a%3==0){
+                    console.log("fizz")
+                }else if(a%5==0){
+                    console.log("buzz")
+                }else{
+                    console.log(a)
+                }
+                a=a+1
+            }
+        }
+        a = prompt('ingrese el primer numero')
+        b = prompt('ingrese el segundo numero')
+        if (a<b){
+            fizzbus(parseFloat(a),parseFloat(b))
+        }else{
+            alert("el primer numero debe ser menor estricto que el segundo")
+        }
+*/
+        //TRIPLICADOR
+        //a = prompt('ingrese un numero')
+        function triplicador(a){
+            alert('el triple de '+ a +' es='+ parseFloat(a)*3)
+            return(parseFloat(a)*3)
+        }
+        //triplicador(a)
+
+        //b = prompt('ingrese el primer numero')
+        //c = prompt('ingrese el segundo numero')
+        function multiplicador(b,c){
+            alert('el producto de '+ b + ' y ' + c + ' es=' + parseFloat(b)*parseFloat(c))
+            return(parseFloat(b)*parseFloat(c))
+        }
+        //multiplicador(b,c)
+
+
+        function division(d,e){
+            alert('la division de '+ d + ' y ' + e + ' es=' +  parseFloat(d)/parseFloat(e))
+            return(parseFloat(d)/parseFloat(e))
+        }
+        //division(d,e)
+
+        function resto(f,g){
+            alert('el resto de '+ f + ' y ' + g + ' es=' + parseFloat(f)%parseFloat(g))
+            return(parseFloat(f)%parseFloat(g))
+        }
+        //resto(f,g)
+
+        //Por último, calcula el valor de triplicar 5, luego multiplicar eso por 12, dividir por 12 y encontrar el resto de dividir eso en 3.
+
+        function multicalculo(){
+            alert('el calculo final de todas las funciones es:' + resto(division(multiplicador(triplicador(5),12),12),3))
+        }
+
+    </script>
+</body>

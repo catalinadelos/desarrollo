@@ -1,0 +1,29 @@
+h1{
+    color:blueviolet;
+    text-decoration: underline;
+}
+p{
+    text-decoration:line-through;
+    background-color: aquamarine;
+}
+input{
+    background-color: chartreuse;
+    padding: 10px;
+}
+td{
+    padding: 20px;
+}
+ul{
+    /*
+    border-style: solid;
+    border-width: 8x; 
+    border-color: gold;
+    */
+    border: 8px solid gold;
+}
+.dorado{
+    color:darkorange;
+}
+#email{
+    background-color:fuchsia;
+}

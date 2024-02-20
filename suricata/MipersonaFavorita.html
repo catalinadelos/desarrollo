@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Persona Favorita</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row mt-2">
+      <div class="col-4 offset-1">
+        <h3>Ingrese los datos de su persona favorita</h3>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="input-nombre" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">URL de la imagen</label>
+          <input type="url" class="form-control" id="input-imagen" aria-describedby="emailHelp">
+        </div>
+        <button class="btn btn-success" id="boton-agregar">Agregar</button>
+      </div>
+      <div class="col-4 offset-2">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="..." id="imagen-card">
+          <div class="card-body">
+            <h5 class="card-title" id="nombre-card">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script>
+    // 1. Detectar clicks sobre el botó agregar
+    $("#boton-agregar").on("click", function () {
+      console.log("Sí se detecta el click");
+      // 2. Obtener lo que el usuario escribió en los campos (el valor de cada campo)
+      const nombre = $("#input-nombre").val();
+      const imagen = $("#input-imagen").val();
+      console.log("El usuario puso como nombre a " + nombre + " y como imagen a " + imagen);
+      // 3. Modificamos el nombre de la card
+      $("#nombre-card").html(nombre);
+      // 4. Modifico el atributo "src" de la imagen de la card
+      $("#imagen-card").attr("src", imagen);
+    });
+  </script>
+</body>
+
+</html>

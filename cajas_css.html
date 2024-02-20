@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        Cajas css
+    </title>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .container{
+            width: 800px;
+            margin: 0 auto; /*centrar*/
+        }
+        header{
+            background-color: blue;
+            min-height:  50px; /*altura minima*/
+            border-radius: 15px;
+        }
+        main{
+            background-color:mediumpurple;
+            min-height:  100px; /*altura minima*/
+            padding: 15px 80px 10px;
+            border: 20px solid white;
+            margin: 10px;
+        }
+        footer{
+            background-color: crimson;
+            min-height:  50px; /*altura minima*/
+        }
+        nav{
+            background-color: deeppink;
+            min-height:  80px; /*altura minima*/
+            width: 35%;
+            display: inline-block;
+            position: relative; /* posicion en relacion a posicion original*/
+        }
+        section{
+            background-color: greenyellow;
+            min-height:  80px; /*altura minima*/
+            margin-left: 10%;
+            width: 25%;
+            display: inline-block;
+        }
+        body{
+            background-color: black;
+        }
+        #mifuente{
+            color: bisque;
+            text-align:center;
+            font-family:fantasy;
+            text-shadow: 25px 10px 8px black;
+            letter-spacing: 3px;
+        }
+        #fuente_externa{
+            font-family: 'Honk', cursive;
+            text-align: center;
+        }
+        .caja{
+            border: 5px solid black;
+            min-height: 25px;
+            background-color:darkorange;
+        }
+
+        /* diseño responsivo*/
+
+        nav{
+            display: none ;
+        }
+        section{
+            width: 100px;
+        }
+        @media only screen and (max-width: 980px){
+            nav{
+                width: 25%;
+                display: inline-block;
+            }
+            section{
+                width: 60%;
+            }
+        }
+        i{
+           margin-left: 750px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <h1 id="mifuente">
+                    HAVE A NICE ONE!
+                </h1>
+            </div>
+            
+           <i class="bi bi-list"></i> 
+        </header>
+        <main>
+            <nav>
+                <div class="caja">1</div>
+                <div class="caja">2</div>
+                <div class="caja">3</div>
+                <div class="caja">4</div>
+            </nav>
+            <section>
+
+            </section>
+        </main>
+        <footer>
+            <h2 id="fuente_externa">
+                Bienvenidos al fullstack de JAVA con los mejores :]
+            </h2>
+        </footer>
+    </div>
+</body>

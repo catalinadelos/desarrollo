@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        Mi curriculum
+    </title>
+<head>
+    <style>
+        body{
+            background-color:slategrey;
+        }
+        header{
+            background-color:crimson;
+            min-height:  30px; /*altura minima*/
+            color:white;
+            border: 2px solid white;
+            margin: 10px;
+            text-align: center;
+
+        }
+        .caja-foto, .caja-datos{
+            display: flex;
+        }
+        .container{
+            width: 800px;
+            margin: 0 auto; /*centrar*/
+            background-color:darkslategrey;
+        }
+        nav{
+            margin: 10px;
+        }
+        section{
+            
+            background-color:white;
+            min-height:  100px; /*altura minima*/  
+            position: relative;
+            color:crimson;
+            border: 2px solid crimson;
+            margin: 10px;
+        }
+        footer{
+            background-color:crimson;
+            min-height:  30px; /*altura minima*/  
+            margin: 10px;
+            border: 2px solid white;
+        }
+        #btn{
+            border-radius: 10px;
+            padding: 1rem;
+            background-color: crimson;
+        }
+        #personal{
+            width: 600px;
+        }
+        #formulario{
+            text-align: center;
+        }
+        #cursos, #experiencia, #formulario{
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+                <h2>Mi pagina personal</h2>
+        </header>
+        <main>
+            <section id="presentacion">
+                <h3>Presentacion</h3>
+                <div>Nombre: Catalina Gonzalez</div>
+                <div>Grado: Analista y programadora de sistemas computacionales</div>
+                <div>Con años de experiencia en el desarrollo de software, estoy seguro de que puedo aportar mis habilidades y conocimientos para contribuir al éxito del equipo.</div>
+                <div><a href="https://github.com/catalinadelos">:: mi Github ::</a></div>  
+            </section>
+
+            <div class="caja-foto">
+                <nav id="foto">
+                    <img src="fotocv.jpg" width="200">
+                </nav>
+                <section id="personal">
+                    <h3>Datos personales</h3>
+                    <div>Direccion: Metrosivero, Region Metropolitana</div>
+                    <div>Comuna: La Florida</div>
+                    <div>Nacionalidad: Chilena</div>
+                    <div>N de Documento: 16.099.0001-1</div> 
+                    <div>Correo: catalina_@gmail.com</div>                  
+                    <div>N°de Contacto: 964010101</div>
+                </section>                
+            </div>
+
+            <div class="caja-datos">
+                <div class="caja-detalles">
+                    <section id="experiencia">
+                        <h3>Experiencia laboral</h3>
+                        <div>Empresa 2018-2021 Supervision y diseño de remodelaciones</div>
+                        <div>Empresa 2021-2022 Desarrollo de proyectos</div>
+                        <div>Empresa 2022-2024 Administracion de base de datos</div>                              
+                    </section>   
+                    <section id="formulario">
+                        <form>
+                            <h3>Formulario de contacto</h3>
+                            <div>
+                                <label>Nombre</label><input type="text" id="nombre">
+                            </div>
+                            <div>
+                                <label>Correo</label><input type="email" id="correo">
+                            </div>
+                            <div>
+                                <input type="submit" value="Enviar" id="btn">   
+                            </div>
+                        </form>
+                    </section>                                       
+                </div>
+                <section id="cursos"> 
+                    <h3>Cursos y Habilidades</h3>
+                    <div>Curso 1 - JavaScript </div>
+                    <div>Curso 2 - Diseño UX UI</div>
+                    <div>Curso 3 - Java</div>
+                    <div>HTML</div>
+                    <div>CSS</div>
+                    <div>PHP</div>
+                    <div>JavaScript</div>
+                    <div>SQL</div>
+                    <div>JQuery</div>
+                </section>
+            </div>
+        </main>
+        <footer>
+        </footer>
+    </div>
+</body>

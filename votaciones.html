@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+</head>
+<body>
+    <h2>
+        ejercicio
+    </h2>
+    <p>
+        cachipun
+    </p>
+    <script>
+        /*
+        const edad = prompt("ingrese su edad")
+        const edadnumb = parseInt(edad)
+        let frase
+        if (edadnumb<18){
+            frase="usted no puede votar"
+        }else if(edadnumb >= 18 && edadnumb <= 65){
+            frase="usted si puede votar haga la fila"
+        }else{
+            frase="usted puede votar, PASE NOMAS"
+        }
+        alert(frase)
+        */
+
+        /*
+       let i=-20
+       while(i<=20){
+        const frase= i + " es multiplo de 5"
+        console.log(frase)
+        i=i+5
+       }
+       
+       let i=1
+       while(i<=100){
+        
+            if((i%3 == 0) && (i%5 ==0)){
+                console.log("fizz buzz")
+            }else if(i%3==0){
+                console.log("fizz")
+            }else if(i%5==0){
+                console.log("buzz")
+            }else{
+                console.log(i)
+            }
+            i=i+1
+        }
+
+let i=1
+while(i==1){
+    const jugada_usuario = prompt('Elija \n1: piedra \n2: tijera')
+    const jugada_cpu = Math.ceil(Math.random()*2)
+
+    if ((jugada_usuario == 1) && (jugada_cpu == 2)){
+        alert("tu sacaste piedra y el computador tijeras GANASTE!")
+    }else if ((jugada_usuario == 2) && (jugada_cpu == 1)){
+        alert("tu sacaste tijeras y el computador piedra PERDISTE!")
+    }else if(jugada_usuario == jugada_cpu){
+        alert("EMPATARON!")
+    }
+    i = prompt('¿Quiere continuar? \n1: si \n2: no')
+}
+*/
+
+
+let i=1
+while(i==1){
+    const jugada_usuario = prompt('Elija \n1: piedra \n2: papel \n3: tijeras')
+    const jugada_cpu = Math.ceil(Math.random()*3)
+    //PIEDRA
+    if ((jugada_usuario == 1) && (jugada_cpu == 1)){
+        alert("ambos sacaron tijeras, EMPATE")
+    }else if ((jugada_usuario == 1) && (jugada_cpu == 2)){
+        alert("la cpu gano con papel, PERDISTE")
+    }else if((jugada_usuario == 1) && (jugada_cpu == 3)){
+        alert("la cpu saco tijeras, GANASTE")
+    }
+    //PAPEL
+    if ((jugada_usuario == 2) && (jugada_cpu == 2)){
+        alert("ambos sacaron papel, EMPATE")
+    }else if ((jugada_usuario == 2) && (jugada_cpu == 1)){
+        alert("la cpu saco piedra, GANASTE")
+    }else if((jugada_usuario == 2) && (jugada_cpu == 3)){
+        alert("la cpu saco tijeras, PERDISTE")
+    }
+    //TIJERAS
+    if ((jugada_usuario == 3) && (jugada_cpu == 3)){
+        alert("ambos sacaron tijeras, EMPATE")
+    }else if ((jugada_usuario == 3) && (jugada_cpu == 1)){
+        alert("la cpu saco piedra, PERDISTE")
+    }else if((jugada_usuario == 3) && (jugada_cpu == 2)){
+        alert("la cpu saco papel, GANASTE")
+    }
+    i = prompt('¿Quiere continuar? \n1: si \n2: no')
+}
+
+    </script>
+</body>

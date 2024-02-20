@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tarjeta de frutas</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!-- GRILLA-->
+    <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <img id="foto1" width="230" src="https://cdn.pixabay.com/photo/2013/07/12/17/41/lemon-152227_1280.png">
+          </div>
+          <div class="col-3">
+            <img id="foto2" width="230" src="https://cdn.pixabay.com/photo/2014/12/21/23/34/cherry-575547_1280.png">
+          </div>
+          <div class="col-3">
+            <img id="foto3" width="230" src="https://cdn.pixabay.com/photo/2014/12/22/00/00/pineapples-576576_1280.png">
+          </div>
+          <div class="col-3">
+            <img id="foto4" width="230" src="https://cdn.pixabay.com/photo/2014/12/21/23/25/apples-575317_1280.png">
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-3" >
+              <img id="foto5" width="230" src="https://cdn.pixabay.com/photo/2013/07/12/19/18/watermelon-154510_1280.png">
+            </div>
+            <div class="col-3">
+              <img id="foto6" width="230" src="https://cdn.pixabay.com/photo/2013/07/13/13/53/kiwi-161728_1280.png">
+            </div>
+            <div class="col-3">
+              <img id="foto7" width="230" src="https://cdn.pixabay.com/photo/2016/04/01/12/20/banana-1300669_1280.png">
+            </div>
+            <div class="col-3">
+              <img id="foto8" width="230" src="https://cdn.pixabay.com/photo/2016/03/31/20/02/fresh-1295471_1280.png">
+            </div>
+          </div>
+    </div>    
+
+
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button type="button" id="boton" class="btn btn-primary">Reset</button>
+    </div>
+    <br>
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button type="button" id="saludar" class="btn btn-primary">saludar</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+
+        $("img").click(function(){
+            $(this).slideUp(500)
+        });
+
+        $("#boton").click(function(){
+            $("img").slideDown(500)
+        })
+        
+
+        //FUNCION AL BOTON
+        $("#saludar").on("click",function(){
+            alert("hola usuario")
+        })
+        $("#saludar").on("mouseleave",function(){
+            $("#saludar").html("Chao Mouse")
+        })
+        $("#saludar").on("mouseenter",function(){
+            $("#saludar").html("Hola Mouse")
+        })
+
+    </script>
+</body>
+</html>
